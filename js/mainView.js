@@ -48,7 +48,7 @@ $(document).ready(function ()
                 var formData = $('#editBookPopupForm').serialize();
                 formData += '&action=addBook';
 
-                $.post('/ajax', formData).done(function (json)
+                $.post('ajax', formData).done(function (json)
                 {
                     var data = JSON.parse(json);
 
@@ -108,7 +108,7 @@ function addEditFunctions()
         editAction = "edit";
         var id = $(this).attr('data-book-id');
 
-        $.post('/ajax', {action: 'getBookData', bookId: id}).done(function (json)
+        $.post('ajax', {action: 'getBookData', bookId: id}).done(function (json)
         {
             var data = JSON.parse(json);
 
@@ -132,7 +132,7 @@ function addEditFunctions()
             var formData = $('#editBookPopupForm').serialize();
             formData += '&action=editBook&id=' + id;
 
-            $.post('/ajax', formData).done(function (json)
+            $.post('ajax', formData).done(function (json)
             {
                 editAction = "";
                 $('#editBookPopup').modal('hide');
@@ -154,7 +154,7 @@ function addDeleteFunctions()
 
         $('#deleteConfirm').off();
         $('#deleteConfirm').on('click', function() {
-            $.post('/ajax', {action: 'deleteBook', bookId: id}).done(function (json)
+            $.post('ajax', {action: 'deleteBook', bookId: id}).done(function (json)
             {
                 $('#deleteBookPopup').modal('hide');
                 $('#bookRow-' + id).fadeOut('slow', function () {});

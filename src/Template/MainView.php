@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/vendor/Bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
-    <link href="/vendor/jQuery/css/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
-    <link href="/css/libri.css" type="text/css" rel="stylesheet"/>
+    <link href="vendor/Bootstrap/css/bootstrap.css" type="text/css" rel="stylesheet"/>
+    <link href="vendor/jQuery/css/jquery-ui.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/libri.css" type="text/css" rel="stylesheet"/>
     <title>Boekenbeheer</title>
     <link rel="icon" type="image/png" href="/favicon.png" />
 
@@ -226,10 +226,10 @@
     <?=$originSourceList; ?>
 </datalist>
 
-<script src="/vendor/jQuery/js/jquery-3.2.1.min.js"></script>
-<script src="/vendor/jQuery/js/jquery-ui.min.js"></script>
-<script src="/vendor/jQuery/js/datepicker-nl.js"></script>
-<script src="/vendor/Bootstrap/js/bootstrap.min.js"></script>
-<script src="/js/mainView.js"></script>
+<script src="vendor/jQuery/js/jquery-3.2.1.min.js"></script>
+<script src="vendor/jQuery/js/jquery-ui.min.js"></script>
+<script src="vendor/jQuery/js/datepicker-nl.js"></script>
+<script src="vendor/Bootstrap/js/bootstrap.min.js"></script>
+<script src="js/mainView.js"></script>
 </body>
 </html>
